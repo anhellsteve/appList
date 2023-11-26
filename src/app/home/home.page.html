@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Listas </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,7 +12,40 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-list>
+      <ion-item color="primary">
+        <ion-avatar item-start>
+          <img src="assets/icon/mario-icon.png" />
+        </ion-avatar>
+        <ion-icon name="leaf" item-start></ion-icon> Super Mario Bros
+      </ion-item>
+      <ion-item color="warning">
+        <ion-avatar item-start>
+          <img src="assets/icon/zelda-icon.png" />
+        </ion-avatar>
+        Zelda <ion-icon name="planet" item-end></ion-icon>
+      </ion-item>
+      <ion-item color="tertiary">
+        <ion-avatar item-start>
+          <img src="assets/icon/bowser-icon.png" />
+        </ion-avatar>
+        <ion-icon name="flask" item-start></ion-icon> Bowser
+        <ion-icon name="lock" item-end></ion-icon>
+      </ion-item>
+      <ion-item color="danger">
+        <ion-avatar item-start>
+          <img src="assets/icon/pacman-icon.png" />
+        </ion-avatar>
+        <ion-label>
+          PacMan <ion-icon name="planet" item-end></ion-icon>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/icon/sonic-icon.png" />
+        </ion-avatar>
+        <ion-label> Sonic </ion-label>
+      </ion-item>
+    </ion-list>
   </div>
 </ion-content>
